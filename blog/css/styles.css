@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+
+body{
+    font-family: 'Roboto Mono', serif;
+    margin:40px auto;
+    max-width:800px;
+    line-height:1.4;
+    font-size:19px;
+    color:#595858;
+}
+
+h1 {
+    font-size:55px; }
+
+h2 {
+    font-size:40px;
+}
+
+.navbar {
+    color:#595858;
+    transition: background-color .3s;
+    margin-bottom:28px;
+    margin: auto;
+}
+
+.navbar-item {
+    padding-inline: 30px;
+    padding: 20px;
+    transition: background-color .3s;
+    text-align: center;
+}
+
+.card {
+    height: 400px;
+    padding: 30px;
+    padding-top: 5px;
+    margin-top:25px;
+    transition: background-color .3s;
+    text-overflow: ellipsis;
+    overflow: hidden; 
+}
+
+.post-list-card {
+    padding: 30px;
+    margin-top:20px;
+    margin-top: 25px;
+    transition: background-color .3s;
+    text-overflow: ellipsis;
+    overflow: hidden; 
+}
+
+.contact-div {
+    padding: 30px;
+    margin-top:20px;
+    margin-top: 25px;
+    transition: background-color .3s;
+    text-overflow: ellipsis;
+}
+
+a {
+    color:#595858;
+    text-decoration: none;
+}
+
+.card:hover,.post-list-card:hover, .navbar-item:hover {
+    background-color:#e0e0e0;
+}
+
+h1,h2,h3{
+    line-height:1.5
+}
+
