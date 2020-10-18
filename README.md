@@ -1,2 +1,2 @@
 # webdevprojects
-random website/other web dev stuff
+random websites/other web dev stuff
