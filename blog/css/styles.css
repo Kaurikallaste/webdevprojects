@@ -32,8 +32,7 @@ h2 {
     padding: 20px;
     transition: background-color .3s;
     text-align: center;
-}
-
+} 
 .card {
     height: 400px;
     padding: 30px;
@@ -66,11 +65,16 @@ a {
     text-decoration: none;
 }
 
-.card:hover,.post-list-card:hover, .navbar-item:hover {
-    background-color:#e0e0e0;
+.card:hover, .post-list-card:hover, .navbar-item:hover {
+    background-color:#ffe8a5;
+}
+
+.highlighted {
+    background-color: var(--text-color);
+    color: white;
 }
 
 h1,h2,h3{
-    line-height:1.5
+    line-height:1.5;
 }
 
