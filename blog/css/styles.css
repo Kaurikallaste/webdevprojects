@@ -69,7 +69,7 @@ a {
     background-color:#ffe8a5;
 }
 
-.highlighted {
+.highlighted, .highlighted:hover {
     background-color: var(--text-color);
     color: white;
 }
