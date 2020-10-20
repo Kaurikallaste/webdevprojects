@@ -21,6 +21,10 @@ h2 {
     font-size:40px;
 }
 
+.center-text {
+    text-align: center;
+}
+
 .navbar {
     transition: background-color .3s;
     margin-bottom:28px;
