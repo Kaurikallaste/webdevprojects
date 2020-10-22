@@ -1,39 +1,13 @@
 import React from 'react';
+import ListPost from './ListPost';
 
 const Posts = () => {
 
     return (
         <>
-            <a href="">
-                <div className="post-list-card">
-                    <h2>mingi pikem tiitel</h2>
-                </div>
-            </a>
-            <a href="">
-                <div className="post-list-card">
-                    <h2>sõna sõna sõna sõna sõna</h2>
-                </div>
-            </a>
-            <a href="">
-                <div className="post-list-card">
-                    <h2>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</h2>
-                </div>
-            </a>
-            <a href="">
-                <div className="post-list-card">
-                    <h2>tiitel2</h2>
-                </div>
-            </a>
-            <a href="">
-                <div className="post-list-card">
-                    <h2>tiitel2</h2>
-                </div>
-            </a>
-            <a href="">
-                <div className="post-list-card">
-                    <h2>tiitel2</h2>
-                </div>
-            </a>
+            <ListPost url="/post/1" title="post1" />
+            <ListPost url="/post/2" title="post2" />
+            <ListPost url="/post/35" title="post35" />
         </>
     );
 }

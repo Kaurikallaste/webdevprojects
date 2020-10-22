@@ -32,13 +32,18 @@ h2 {
 }
 
 .navbar-item {
+    border-radius: 5px;
     padding-inline: 30px;
+    display:inline-block;
+    margin-right: 10px;
+    width:120px;
     padding: 20px;
     transition: background-color .3s;
     text-align: center;
 } 
 
 .card {
+    border-radius: 5px;
     height: 400px;
     padding: 30px;
     padding-top: 4px;
@@ -49,6 +54,7 @@ h2 {
 }
 
 .post-list-card {
+    border-radius: 5px;
     padding: 30px;
     margin-top:20px;
     margin-top: 25px;

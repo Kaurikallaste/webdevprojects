@@ -12,24 +12,24 @@ import Posts from './components/Posts';
 import ErrorPage from './components/ErrorPage';
 
 const App = () => {
-  return (
-    <Router>
-      <div>
-        <Switch>
-          <Route exact path="/"><Navbar /><Home /></Route>
-          <Route exact path="/posts"><Navbar /><Posts /></Route>
-          <Route exact path="/contact"><Navbar /><Contact /></Route>
-          <Route exact path="/post/:id"><Navbar /><Post /></Route>
-          <Route exact path="*"><ErrorPage /></Route>
-        </Switch>
-      </div>
-    </Router>
-  );
-}
+    return (
+        <Router>
+            <div>
+                <Switch>
+                    <Route exact path="/"><Navbar /><Home /></Route>
+                    <Route exact path="/posts"><Navbar /><Posts /></Route>
+                    <Route exact path="/contact"><Navbar /><Contact /></Route>
+                    <Route exact path="/post/:id"><Navbar /><Post /></Route>
+                    <Route exact path="*"><ErrorPage /></Route>
+                </Switch>
+            </div>
+        </Router>
+    );
+};
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>,
+    document.getElementById('root')
 );

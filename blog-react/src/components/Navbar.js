@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 
 const currentUrl = (url) => {
-    if (window.location.pathname == url) {
+    if (window.location.pathname === url) {
         return "navbar-item highlighted";
     }
     return "navbar-item";
