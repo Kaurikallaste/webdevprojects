@@ -4,23 +4,37 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import './styles.css';
 
-import Navbar from './components/Navbar';
-import Home from './components/Home';
-import Post from './components/Post';
-import Contact from './components/Contact';
-import Posts from './components/Posts';
-import ErrorPage from './components/ErrorPage';
+import Navbar from './components/blog/Navbar';
+import Home from './components/blog/Home';
+import Post from './components/blog/Post';
+import Contact from './components/blog/Contact';
+import Posts from './components/blog/Posts';
+import ErrorPage from './components/blog/ErrorPage';
 
 const App = () => {
     return (
         <Router>
             <div>
                 <Switch>
-                    <Route exact path="/"><Navbar /><Home /></Route>
-                    <Route exact path="/posts"><Navbar /><Posts /></Route>
-                    <Route exact path="/contact"><Navbar /><Contact /></Route>
-                    <Route exact path="/post/:id"><Navbar /><Post /></Route>
-                    <Route exact path="*"><ErrorPage /></Route>
+                    <Route exact path="/">
+                        <Navbar />
+                        <Home />
+                    </Route>
+                    <Route exact path="/posts">
+                        <Navbar />
+                        <Posts />
+                    </Route>
+                    <Route exact path="/contact">
+                        <Navbar />
+                        <Contact />
+                    </Route>
+                    <Route exact path="/post/:id">
+                        <Navbar />
+                        <Post />
+                    </Route>
+                    <Route exact path="*">
+                        <ErrorPage />
+                    </Route>
                 </Switch>
             </div>
         </Router>

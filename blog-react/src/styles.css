@@ -7,7 +7,8 @@
 body{
     font-family: 'Roboto Mono', serif;
     margin:40px auto;
-    max-width:800px;
+    margin-bottom: 60px;
+    max-width:900px;
     line-height:1.4;
     font-size:19px;
     color: var(--text-color);
@@ -21,22 +22,33 @@ h2 {
     font-size:40px;
 }
 
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+h1,h2,h3{
+    line-height:1.5;
+}
+
+
 .center-text {
     text-align: center;
 }
 
 .navbar {
     transition: background-color .3s;
-    margin-bottom:28px;
+    margin-bottom: 28px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin: auto;
 }
 
 .navbar-item {
     border-radius: 5px;
-    padding-inline: 30px;
-    display:inline-block;
+    display: inline-block;
     margin-right: 10px;
-    width:120px;
+    width: 110px;
     padding: 20px;
     transition: background-color .3s;
     text-align: center;
@@ -47,7 +59,7 @@ h2 {
     height: 400px;
     padding: 30px;
     padding-top: 4px;
-    margin-top:25px;
+    margin-top: 25px;
     transition: background-color .3s;
     text-overflow: ellipsis;
     overflow: hidden; 
@@ -56,7 +68,6 @@ h2 {
 .post-list-card {
     border-radius: 5px;
     padding: 30px;
-    margin-top:20px;
     margin-top: 25px;
     transition: background-color .3s;
     text-overflow: ellipsis;
@@ -65,15 +76,9 @@ h2 {
 
 .contact-div {
     padding: 30px;
-    margin-top:20px;
     margin-top: 25px;
     transition: background-color .3s;
     text-overflow: ellipsis;
-}
-
-a {
-    color: var(--text-color);
-    text-decoration: none;
 }
 
 .card:hover, .post-list-card:hover, .navbar-item:hover {
@@ -83,8 +88,4 @@ a {
 .highlighted, .highlighted:hover {
     background-color: var(--text-color);
     color: white;
-}
-
-h1,h2,h3{
-    line-height:1.5;
 }
