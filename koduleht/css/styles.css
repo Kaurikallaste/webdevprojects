@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+
+:root {
+    --text-color: #3b3a37;
+}
+
+body {
+    font-family: 'Roboto Mono', serif;
+    line-height: 1.4;
+    font-size: 19px;
+    color: var(--text-color);
+    overflow: hidden;
+
+    background-image: url("background.jpeg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+.container {
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: auto;
+    scroll-snap-align: start;
+}
+
+.topmargin {
+    margin-top: 10vh;
+}
+
+
+.content {
+    margin-bottom: 2%;
+    border-radius: 7px;
+    width: 75%;
+    background-color: white;
+    padding: 3%;
+    padding-inline: 50px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    
+    width: 200px;
+    height: 70px;
+    border-radius: 7px;
+    margin-right: 2%;
+
+    background-color: white;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #ffe8a5;
+    text-align: center;
+  }
+
+h1 {
+    align-self: auto;
+    font-size:55px; 
+}
+
+.button:hover {
+    background-color: #ffe8a5;
+}
+
+h2 {
+    font-size:30px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
